@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">                    <!--20398 lines of code. all files combined. after optimization-->
+    <script src="calc.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="wavy">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </div> 
+    <div class="calculator">
+        <div class="calculator-container">
+            <input class="calc-display" type="text" value="" placeholder="0" readonly>
+            <div class="calc-button-container">
+                <div ><button class="calc-button op-but" onclick="operation(this)">%</button></div>
+                <div ><button class="calc-button del-but" onclick="editButtons(this)">CE</button></div>
+                <div ><button class="calc-button del-but" onclick="editButtons(this)">C</button></div>
+                <div ><button class="calc-button del-but" onclick="editButtons(this)">DEL</button></div>
+                <div ><button class="calc-button op-but" onclick="specialOperation(this)">1/x</button></div>
+                <div ><button class="calc-button op-but" onclick="specialOperation(this)">x<sup>2</sup></button></div>
+                <div ><button class="calc-button op-but" onclick="specialOperation(this)">x<sup>1/2</sup></button></div>
+                <div ><button class="calc-button op-but" onclick="operation(this)">/</button></div>
+                <div ><button class="calc-button" onclick="number(this)">7</button></div>
+                <div ><button class="calc-button" onclick="number(this)">8</button></div>
+                <div ><button class="calc-button" onclick="number(this)">9</button></div>
+                <div ><button class="calc-button op-but" onclick="operation(this)" >*</button></div>
+                <div ><button class="calc-button" onclick="number(this)">4</button></div>
+                <div ><button class="calc-button" onclick="number(this)">5</button></div>
+                <div ><button class="calc-button" onclick="number(this)">6</button></div>
+                <div ><button class="calc-button op-but" onclick="operation(this)">-</button></div>               
+                <div ><button class="calc-button" onclick="number(this)">1</button></div>
+                <div ><button class="calc-button" onclick="number(this)">2</button></div>
+                <div ><button class="calc-button" onclick="number(this)">3</button></div>
+                <div ><button class="calc-button op-but" onclick="operation(this)">+</button></div>
+                <div ><button class="calc-button op-but" onclick="specialOperation(this)">+/-</button></div>
+                <div ><button class="calc-button" onclick="number(this)">0</button></div>
+                <div ><button class="calc-button" onclick="operation(this)">.</button></div>
+                <div ><button class="calc-button solve-but" onclick="editButtons(this)">=</button></div>           
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
